@@ -1,0 +1,1 @@
+Put train hazy images in this folder!
