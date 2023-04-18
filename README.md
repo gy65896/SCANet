@@ -16,7 +16,23 @@ The presence of non-homogeneous haze can cause scene blurring, color distortion,
 ## Network Architecture
 ![fig_scanet](https://user-images.githubusercontent.com/48637474/232728784-74728cd8-c18e-40b8-a275-1b2ca24a05e7.png)
 
+## Train
 
+* Place the training and test image pairs in the `data` folder.
+* Run `data/makedataset.py` to generate the `NH-Haze20-21-23.h5` file.
+* Run `train.py` to start training.
+
+## Test
+
+* Place test hazy images in the `input` folder.
+* Run `test.py`
+* The results is saved in `output` folder.
+
+## Pre-training Weight Download
+
+* The [weight40]() for the NTIRE2023 val/test datasets.
+* The [weight105]() for the NTIRE2020/2021/2023 datasets.
+* The [weight120]() for the NTIRE2020/2021/2023 datasets (Add the 15 tested images as the training dataset).
 
 ## Citation
 
