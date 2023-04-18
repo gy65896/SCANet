@@ -24,6 +24,7 @@ The presence of non-homogeneous haze can cause scene blurring, color distortion,
 
 ## Test
 
+* Place the pre-training weight in the `checkpoint` folder.
 * Place test hazy images in the `input` folder.
 * Run `test.py`
 * The results is saved in `output` folder.
