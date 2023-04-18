@@ -24,7 +24,7 @@ The presence of non-homogeneous haze can cause scene blurring, color distortion,
 @article{guo2023asynchronous,
   title={SCANet: Self-Paced Semi-Curricular Attention Network for Non-Homogeneous Image Dehazing},
   author={Guo, Yu and Gao, Yuan and Liu, Ryan Wen and Lu, Yuxu and Qu, Jingxiang and He, Shengfeng, and Ren, Wenqi},
-  journal={2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)},
+  journal={2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops},
   year={2023}
 }
 ```
