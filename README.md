@@ -30,9 +30,9 @@ The presence of non-homogeneous haze can cause scene blurring, color distortion,
 
 ## Pre-training Weight Download
 
-* The [weight40]() for the NTIRE2023 val/test datasets.
-* The [weight105]() for the NTIRE2020/2021/2023 datasets.
-* The [weight120]() for the NTIRE2020/2021/2023 datasets (Add the 15 tested images as the training dataset).
+* The [weight40](https://drive.google.com/file/d/15-M7bGwZkXtCato_kEfLi1VOq-tjblPL/view?usp=share_link) for the NTIRE2023 val/test datasets.
+* The [weight105](https://drive.google.com/file/d/1ATye3j81n62VHXwGihShazYnMoEbTMLd/view?usp=share_link) for the NTIRE2020/2021/2023 datasets.
+* The [weight120](https://drive.google.com/file/d/1sC81YfqOa82irk_Dy37I9oxpX4zniS2z/view?usp=share_link) for the NTIRE2020/2021/2023 datasets (Add the 15 tested images as the training dataset).
 
 ## Citation
 
