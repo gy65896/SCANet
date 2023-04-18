@@ -18,7 +18,7 @@ def main():
     parser = argparse.ArgumentParser(description="network pytorch")
     # train
     parser.add_argument("--model", type=str, default="./checkpoint/", help='checkpoint')
-    parser.add_argument("--model_name", type=str, default='184_21.9692_0.7242', help='model name')
+    parser.add_argument("--model_name", type=str, default='Gmodel_40', help='model name')
     # value
     parser.add_argument("--intest", type=str, default="./input/", help='input syn path')
     parser.add_argument("--outest", type=str, default="./output/", help='output syn path')
