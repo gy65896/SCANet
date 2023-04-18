@@ -26,8 +26,10 @@ The presence of non-homogeneous haze can cause scene blurring, color distortion,
 
 * Place the pre-training weight in the `checkpoint` folder.
 * Place test hazy images in the `input` folder.
-* Modify the weight name in the `test.py`.
-```parser.add_argument("--model_name", type=str, default='Gmodel_40', help='model name')```
+* Modify the weight name in the `test.py`.<br> 
+```
+parser.add_argument("--model_name", type=str, default='Gmodel_40', help='model name')
+```
 * Run `test.py`
 * The results is saved in `output` folder.
 
