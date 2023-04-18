@@ -1,7 +1,7 @@
 # [CVPRW 2023] SCANet: Self-Paced Semi-Curricular Attention Network for Non-Homogeneous Image Dehazing
 
 ---
->**Curricular Contrastive Regularization for Physics-aware Single Image Dehazing [[paper](http://arxiv.org/abs/2304.08444)]**<br>  Yu Guo, Yuan Gao, [Ryan Wen Liu<sup>*</sup>](http://mipc.whut.edu.cn/index.html), Yuxu Lu, Jingxiang Qu, [Shengfeng He](http://www.shengfenghe.com/), Wenqi Ren(* indicates corresponding author) <br> 
+>**Curricular Contrastive Regularization for Physics-aware Single Image Dehazing [[paper](http://arxiv.org/abs/2304.08444)]**<br>  Yu Guo, Yuan Gao, [Ryan Wen Liu<sup>*</sup>](http://mipc.whut.edu.cn/index.html), Yuxu Lu, Jingxiang Qu, [Shengfeng He](http://www.shengfenghe.com/), Wenqi Ren (* indicates corresponding author) <br> 
 >IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops
 
 ## Preparation
