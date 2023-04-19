@@ -4,7 +4,7 @@
 >**Curricular Contrastive Regularization for Physics-aware Single Image Dehazing [[paper](http://arxiv.org/abs/2304.08444)]**<br>  Yu Guo, Yuan Gao, [Ryan Wen Liu<sup>*</sup>](http://mipc.whut.edu.cn/index.html), Yuxu Lu, Jingxiang Qu, [Shengfeng He](http://www.shengfenghe.com/), [Wenqi Ren](https://sites.google.com/view/wenqiren/homepage) (* indicates corresponding author) <br> 
 >IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops
 
-## Preparation
+## Requirement
 
 - Python 3.7
 - Pytorch 1.9.1
