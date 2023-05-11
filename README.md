@@ -41,7 +41,6 @@ parser.add_argument("--model_name", type=str, default='Gmodel_40', help='model n
 * The [weight105](https://drive.google.com/file/d/1ATye3j81n62VHXwGihShazYnMoEbTMLd/view?usp=share_link) for the NTIRE2020/2021/2023 datasets.
 * The [weight120](https://drive.google.com/file/d/1sC81YfqOa82irk_Dy37I9oxpX4zniS2z/view?usp=share_link) for the NTIRE2020/2021/2023 datasets (Add the 15 tested images as the training dataset).
 
-<iframe frameborder="0" class="juxtapose" width="320" height="180" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=7f5bc3f6-efef-11ed-b5bd-6595d9b17862"></iframe>
 ## Citation
 
 ```
