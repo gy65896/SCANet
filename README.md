@@ -53,5 +53,5 @@ parser.add_argument("--model_name", type=str, default='Gmodel_40', help='model n
 </div>
 <p align="center"> 
   Visitor count<br>
-  <img src="https://profile-counter.glitch.me/gy65896/count.svg" />
+  <img src="https://profile-counter.glitch.me/gy65896_SCANet/count.svg" />
 </p>
