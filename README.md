@@ -1,5 +1,6 @@
 # [CVPRW 2023] SCANet: Self-Paced Semi-Curricular Attention Network for Non-Homogeneous Image Dehazing
-[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](http://arxiv.org/abs/2304.08444)
+[![paper](https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/html/Guo_SCANet_Self-Paced_Semi-Curricular_Attention_Network_for_Non-Homogeneous_Image_Dehazing_CVPRW_2023_paper.html)
+[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](http://arxiv.org/abs/2304.08444)
 
 ---
 >**SCANet: Self-Paced Semi-Curricular Attention Network for Non-Homogeneous Image Dehazing**<br>  [Yu Guo](https://gy65896.github.io/), Yuan Gao, [Ryan Wen Liu<sup>*</sup>](http://mipc.whut.edu.cn/index.html), Yuxu Lu, Jingxiang Qu, [Shengfeng He](http://www.shengfenghe.com/), [Wenqi Ren](https://sites.google.com/view/wenqiren/homepage) (* indicates corresponding author) <br> 
