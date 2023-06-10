@@ -1,5 +1,5 @@
 # [CVPRW 2023] SCANet: Self-Paced Semi-Curricular Attention Network for Non-Homogeneous Image Dehazing
-[![paper](https://img.shields.io/badge/SCANet-paper-<COLOR>.svg)](https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/html/Guo_SCANet_Self-Paced_Semi-Curricular_Attention_Network_for_Non-Homogeneous_Image_Dehazing_CVPRW_2023_paper.html)
+[![paper](https://img.shields.io/badge/SCANet-paper-red.svg)](https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/html/Guo_SCANet_Self-Paced_Semi-Curricular_Attention_Network_for_Non-Homogeneous_Image_Dehazing_CVPRW_2023_paper.html)
 [![arXiv](https://img.shields.io/badge/SCANet-arXiv-<COLOR>.svg)](http://arxiv.org/abs/2304.08444)
 
 ---
