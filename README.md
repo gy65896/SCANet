@@ -52,13 +52,13 @@ parser.add_argument("--model_name", type=str, default='Gmodel_40', help='model n
 ## Citation
 
 ```
-@InProceedings{Guo_2023_CVPR,
-    author    = {Guo, Yu and Gao, Yuan and Liu, Wen and Lu, Yuxu and Qu, Jingxiang and He, Shengfeng and Ren, Wenqi},
-    title     = {SCANet: Self-Paced Semi-Curricular Attention Network for Non-Homogeneous Image Dehazing},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
-    month     = {June},
-    year      = {2023},
-    pages     = {1884-1893}
+@inproceedings{guo2023scanet,
+  title={SCANet: Self-Paced Semi-Curricular Attention Network for Non-Homogeneous Image Dehazing},
+  author={Guo, Yu and Gao, Yuan and Liu, Wen and Lu, Yuxu and Qu, Jingxiang and He, Shengfeng and Ren, Wenqi},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops},
+  pages={1884--1893},
+  month={June},
+  year={2023}
 }
 ```
 
