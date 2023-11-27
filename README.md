@@ -39,7 +39,7 @@
 parser.add_argument("--model_name", type=str, default='Gmodel_40', help='model name')
 ```
 * Run `test.py`
-* The results is saved in `output` folder.
+* The results are saved in `output` folder.
 
 
 
