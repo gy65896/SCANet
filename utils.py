@@ -32,7 +32,7 @@ def gen_att(haze,clear):
     return m_g_l
 
 # 加载模型
-def load_checkpoint(checkpoint_dir, Model, name, learnrate=None):
+def load_checkpoint(checkpoint_dir, Model, name, arg, learnrate=None):
     if os.path.exists(checkpoint_dir + name):
         # 加载存在的模型
         model_info = torch.load(checkpoint_dir + name)
@@ -61,7 +61,7 @@ def load_checkpoint(checkpoint_dir, Model, name, learnrate=None):
         device_ids = [0]
         device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
         try:
-            optimizer = torch.optim.Adam(model.parameters(), lr=learnrate)
+            optimizer = torch.optim.Adam(model.parameters(), lr=arg.lr)
         except:
             print('Must input learnrate!')
         model = torch.nn.DataParallel(model, device_ids=device_ids).cuda()
