@@ -33,7 +33,7 @@ def main():
     parser.add_argument("--test_epoch", type=int, default=2, help='test epoch')
     parser.add_argument("--bs", type=str, default=2, help='batchsize')
     parser.add_argument("--lr_up", type=str, default=0.5, help='learning rate up')
-    parser.add_argument("--lr", type=str, default=1e-4, help='learning rate')
+    parser.add_argument("--lr", type=str, default=1e-3, help='learning rate')
     
     
     parser.add_argument("--model", type=str, default="./checkpoint/", help='checkpoint')
@@ -58,8 +58,8 @@ def main():
     name = arg.model_name
     Gmodel_name = 'Gmodel_'+name+'.tar'
     Dmodel_name = 'Dmodel_'+name+'.tar'
-    G_Model, G_optimizer, cur_epoch = load_checkpoint(argspar.model, Generator, Gmodel_name)
-    D_Model, D_optimizer,_ = load_checkpoint(argspar.model, Discriminator, Dmodel_name)
+    G_Model, G_optimizer, cur_epoch = load_checkpoint(argspar.model, Generator, Gmodel_name, arg)
+    D_Model, D_optimizer,_ = load_checkpoint(argspar.model, Discriminator, Dmodel_name, arg)
     cur_epoch = arg.start_epoch
     
     print('> Start training...')
