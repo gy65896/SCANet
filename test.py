@@ -1,17 +1,26 @@
 import os, time, argparse
 import numpy as np
 from PIL import Image
-
+import glob
 import torch
 from torchvision.utils import save_image as imwrite
 
 from utils import load_checkpoint, tensor2cuda
 
 from model.models import Generator
+import cv2
 
 # 调用GPU
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+
+
+def addTransparency(img, factor=1):
+    img = img.convert('RGBA')
+    img_blender = Image.new('RGBA', img.size, (0, 0, 0, 0))
+    img = Image.blend(img_blender, img, factor)
+    return img
+
 
 def main():
     # 开关定义
@@ -33,12 +42,16 @@ def main():
     # train
     print('> Loading Generator...')
     name = arg.model_name
-    Gmodel_name = 'Gmodel_'+name+'.tar'
-    Dmodel_name = 'Dmodel_'+name+'.tar'
-    G_Model, _, _ = load_checkpoint(argspar.model, Generator, Gmodel_name)
+    Gmodel_name = name + '.tar'
+    Dmodel_name = name + '.tar'
+    G_Model, _, _ = load_checkpoint(argspar.model, Generator, Gmodel_name, arg)
 
     os.makedirs(arg.outest, exist_ok=True)
     test(argspar, G_Model)
+
+
+xishu = 0.75
+
 
 def test(argspar, model):
     # init
@@ -49,8 +62,13 @@ def test(argspar, model):
     model.eval()
     # test
     for i in range(len(files)):
-        haze = np.array(Image.open(argspar.intest + files[i]).convert('RGB')) / 255
-        
+        haze = Image.open(argspar.intest + files[i])
+        x = haze.width
+        y = haze.height
+        haze = haze.resize((int(x * xishu), (int(y * xishu))))
+        print(x * xishu, y * xishu)
+        haze = np.array(haze.convert('RGB')) / 255
+
         with torch.no_grad():
             haze = torch.Tensor(haze.transpose(2, 0, 1)[np.newaxis, :, :, :]).cuda()
             haze = tensor2cuda(haze)
@@ -59,14 +77,30 @@ def test(argspar, model):
             haze = norm(haze)
             out, att = model(haze)
             endtime1 = time.time()
-            
+
             out = denorm(out)
-            imwrite(out, argspar.outest + files[i], range=(0, 1))
-            
+
+            # out = out.resize((int(x), (int(y))))
+            # out = cv2.resize(out, (x, y))
+            imwrite(out, argspar.outest + files[i], value_range=(0, 1))
+
             time_test.append(endtime1 - starttime)
 
             print('The ' + str(i) + ' Time: %.4f s.' % (endtime1 - starttime))
-    print('Mean Time: %.4f s.'%(time_test/len(time_test)))
+
+    # print('Mean Time: %.4f s.'%(time_test/len(time_test)))
+
+    path = './output/*.png'
+    for i in glob.glob(path):
+        im1 = Image.open(i)
+        im = Image.open(argspar.intest + files[0])
+        x = im1.width
+        y = im1.height
+        im1 = im1.resize((int(x / xishu), (int(y / xishu))))
+
+        if len(im.split()) == 4:
+            im2 = addTransparency(im1)
+            im2.save(os.path.join('./output/', os.path.basename(i)))
 
 
 if __name__ == '__main__':
