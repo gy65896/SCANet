@@ -2,18 +2,20 @@
 
 <div align="center">
   
-[![paper](https://img.shields.io/badge/SCANet-paper-blue.svg)](https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/html/Guo_SCANet_Self-Paced_Semi-Curricular_Attention_Network_for_Non-Homogeneous_Image_Dehazing_CVPRW_2023_paper.html)
-[![arXiv](https://img.shields.io/badge/SCANet-arXiv-red.svg)](http://arxiv.org/abs/2304.08444)
-[![poster](https://img.shields.io/badge/SCANet-poster-green.svg)](https://github.com/gy65896/SCANet/blob/main/poster/SCANet_poster.png)
-[![video](https://img.shields.io/badge/SCANet-video-orange.svg)](https://drive.google.com/file/d/1KsfrAPUKTZR2QPqO9X8QDdmyl9AHJC7t/view)
+[![Paper](https://img.shields.io/badge/SCANet-Paper-blue.svg)](https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/html/Guo_SCANet_Self-Paced_Semi-Curricular_Attention_Network_for_Non-Homogeneous_Image_Dehazing_CVPRW_2023_paper.html)
+[![ArXiv](https://img.shields.io/badge/SCANet-ArXiv-red.svg)](http://arxiv.org/abs/2304.08444)
+[![Poster](https://img.shields.io/badge/SCANet-Poster-green.svg)](https://github.com/gy65896/SCANet/blob/main/poster/SCANet_poster.png)
+[![Video](https://img.shields.io/badge/SCANet-Video-orange.svg)](https://drive.google.com/file/d/1KsfrAPUKTZR2QPqO9X8QDdmyl9AHJC7t/view)
 
 </div>
 
 ---
->**SCANet: Self-Paced Semi-Curricular Attention Network for Non-Homogeneous Image Dehazing**<br>  [Yu Guo](https://scholar.google.com/citations?user=klYz-acAAAAJ&hl=zh-CN), [Yuan Gao](https://scholar.google.com/citations?user=4JpRnU4AAAAJ&hl=zh-CN), [Ryan Wen Liu<sup>*</sup>](http://mipc.whut.edu.cn/index.html), [Yuxu Lu](https://scholar.google.com/citations?user=XXge2_0AAAAJ&hl=zh-CN), [Jingxiang Qu](https://scholar.google.com/citations?user=9zK-zGoAAAAJ&hl=zh-CN), [Shengfeng He](http://www.shengfenghe.com/), [Wenqi Ren](https://sites.google.com/view/wenqiren/homepage) (* indicates corresponding author) <br> 
+>**SCANet: Self-Paced Semi-Curricular Attention Network for Non-Homogeneous Image Dehazing**<br>
+>[Yu Guo](https://scholar.google.com/citations?user=klYz-acAAAAJ&hl=zh-CN), [Yuan Gao](https://scholar.google.com/citations?user=4JpRnU4AAAAJ&hl=zh-CN), [Ryan Wen Liu<sup>*</sup>](http://mipc.whut.edu.cn/index.html), [Yuxu Lu](https://scholar.google.com/citations?user=XXge2_0AAAAJ&hl=zh-CN), [Jingxiang Qu](https://scholar.google.com/citations?user=9zK-zGoAAAAJ&hl=zh-CN), [Shengfeng He](http://www.shengfenghe.com/), Wenqi Ren<br>
+>(* Corresponding Author)<br>
 >IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops
 
-> **Abstract:** *The presence of non-homogeneous haze can cause scene blurring, color distortion, low contrast, and other degradations that obscure texture details. Existing homogeneous dehazing methods struggle to handle the non-uniform distribution of haze in a robust manner. The crucial challenge of non-homogeneous dehazing is to effectively extract the non-uniform distribution features and reconstruct the details of hazy areas with high quality. In this paper, we propose a novel self-paced semi-curricular attention network, called SCANet, for non-homogeneous image dehazing that focuses on enhancing haze-occluded regions. Our approach consists of an attention generator network and a scene reconstruction network. We use the luminance differences of images to restrict the attention map and introduce a self-paced semi-curricular learning strategy to reduce learning ambiguity in the early stages of training. Extensive quantitative and qualitative experiments demonstrate that our SCANet outperforms many state-of-the-art methods. The code is publicly available at https://github.com/gy65896/SCANet.*
+> **Abstract:** *The presence of non-homogeneous haze can cause scene blurring, color distortion, low contrast, and other degradations that obscure texture details. Existing homogeneous dehazing methods struggle to handle the non-uniform distribution of haze in a robust manner. The crucial challenge of non-homogeneous dehazing is to effectively extract the non-uniform distribution features and reconstruct the details of hazy areas with high quality. In this paper, we propose a novel self-paced semi-curricular attention network, called SCANet, for non-homogeneous image dehazing that focuses on enhancing haze-occluded regions. Our approach consists of an attention generator network and a scene reconstruction network. We use the luminance differences of images to restrict the attention map and introduce a self-paced semi-curricular learning strategy to reduce learning ambiguity in the early stages of training. Extensive quantitative and qualitative experiments demonstrate that our SCANet outperforms many state-of-the-art methods.*
 <hr />
 
 ## Requirement
@@ -55,9 +57,8 @@ parser.add_argument("--model_name", type=str, default='Gmodel_40', help='model n
 @inproceedings{guo2023scanet,
   title={SCANet: Self-Paced Semi-Curricular Attention Network for Non-Homogeneous Image Dehazing},
   author={Guo, Yu and Gao, Yuan and Liu, Wen and Lu, Yuxu and Qu, Jingxiang and He, Shengfeng and Ren, Wenqi},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops},
+  booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops},
   pages={1884--1893},
-  month={June},
   year={2023}
 }
 ```
