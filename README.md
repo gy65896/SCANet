@@ -63,6 +63,8 @@ parser.add_argument("--model_name", type=str, default='Gmodel_40', help='model n
 }
 ```
 
+#### If you have any questions, please get in touch with me (guoyu65896@gmail.com).
+
 </div>
 <p align="center"> 
   Visitor count<br>
