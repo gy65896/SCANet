@@ -11,7 +11,7 @@
 
 ---
 >**SCANet: Self-Paced Semi-Curricular Attention Network for Non-Homogeneous Image Dehazing**<br>
->[Yu Guo](https://scholar.google.com/citations?user=klYz-acAAAAJ&hl=zh-CN), [Yuan Gao](https://scholar.google.com/citations?user=4JpRnU4AAAAJ&hl=zh-CN), [Ryan Wen Liu<sup>*</sup>](http://mipc.whut.edu.cn/index.html), [Yuxu Lu](https://scholar.google.com/citations?user=XXge2_0AAAAJ&hl=zh-CN), [Jingxiang Qu](https://scholar.google.com/citations?user=9zK-zGoAAAAJ&hl=zh-CN), [Shengfeng He](http://www.shengfenghe.com/), Wenqi Ren<br>
+>[Yu Guo](https://scholar.google.com/citations?user=klYz-acAAAAJ&hl=zh-CN), Yuan Gao, [Ryan Wen Liu<sup>*</sup>](http://mipc.whut.edu.cn/index.html), [Yuxu Lu](https://scholar.google.com/citations?user=XXge2_0AAAAJ&hl=zh-CN), [Jingxiang Qu](https://scholar.google.com/citations?user=9zK-zGoAAAAJ&hl=zh-CN), [Shengfeng He](http://www.shengfenghe.com/), Wenqi Ren<br>
 >(* Corresponding Author)<br>
 >IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops
 
